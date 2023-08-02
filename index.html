@@ -16,13 +16,13 @@
         <form action="" class="formulario" id="formulario" data-formulario>
 
             <!-- Grupo: Usuario -->
-            <div class="formulario__grupo" id="grupo__usuario">
+            <div class="formulario__grupo formulario__grupo-incorrecto" id="grupo__usuario">
                 <label for="usuario" class="formulario__label">Usuario</label>
                 <div class="formulario__grupo-input">
                     <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="John117">
                     <i class="formulario__validacion-estado fa-solid fa-circle-xmark "></i>
                 </div>
-                <p class="formulario__input--error">
+                <p class="formulario__input-error">
                     El usuario tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guión bajo.
                 </p>
             </div>
@@ -34,20 +34,8 @@
                     <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John">
                     <i class="formulario__validacion-estado fa-solid fa-circle-xmark "></i>
                 </div>
-                <p class="formulario__input--error">
+                <p class="formulario__input-error">
                     El nombre tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guión bajo.
-                </p>
-            </div>
-
-            <!-- Grupo: Contraseña -->
-            <div class="formulario__grupo" id="grupo__password">
-                <label for="password" class="formulario__label">Password</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="password" id="password" placeholder="John">
-                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark "></i>
-                </div>
-                <p class="formulario__input--error">
-                    El password tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guión bajo.
                 </p>
             </div>
 
@@ -58,7 +46,7 @@
                     <input type="password" class="formulario__input" name="password" id="password">
                     <i class="formulario__validacion-estado fa-solid fa-circle-xmark "></i>
                 </div>
-                <p class="formulario__input--error">
+                <p class="formulario__input-error">
                     La contraseña debe contener de 4 a 6 dígitos
                 </p>
             </div>
@@ -70,7 +58,7 @@
                     <input type="password" class="formulario__input" name="password2" id="password2">
                     <i class="formulario__validacion-estado fa-solid fa-circle-xmark "></i>
                 </div>
-                <p class="formulario__input--error">
+                <p class="formulario__input-error">
                     Ambas contraseñas deben ser iguales
                 </p>
             </div>
@@ -82,7 +70,7 @@
                     <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
                     <i class="formulario__validacion-estado fa-solid fa-circle-xmark "></i>
                 </div>
-                <p class="formulario__input--error">
+                <p class="formulario__input-error">
                     El correo solo puede contener letras, números, puntos, guiones y guion bajo.
                 </p>
             </div>
@@ -94,13 +82,13 @@
                     <input type="email" class="formulario__input" name="telefono" id="telefono" placeholder="3129876512">
                     <i class="formulario__validacion-estado fa-solid fa-circle-xmark "></i>
                 </div>
-                <p class="formulario__input--error">
+                <p class="formulario__input-error">
                     EL telefono solo puede contener números y el máximo son 14 dígitos.
                 </p>
             </div>
 
             <!-- Grupo: Términos y condiciones-->
-            <div class="formulario__grupo" id="grupo__terminos">
+            <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
                 <label for="terminos" class="formulario__label">
                     <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
                     Acepto los términos y condiciones.
@@ -115,7 +103,7 @@
             <div class="formulario__grupo formulario__grupo-btn-enviar">
                 <button type="submit" class="formulario__btn">Enviar</button>
                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
-                    El formulario se envió exitosamente.
+                    ¡ El formulario se envió exitosamente !
                 </p>
             </div>
 
